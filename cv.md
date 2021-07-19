@@ -22,7 +22,7 @@ From 2020 - working as a front-end developer.
 ## Education:
 - 2001-2006: Belarusian State Economic University, Economy and trade management faculty.  
 - 2018-2019: Retraining on the basis of higher education with a degree in software engineering.  
-## Foreight languages:
+## Foreign languages:
 - English: **B2** (example: [presentation about Angular in English](https://www.youtube.com/watch?v=PB67Y6ZVFJ8))  
 - Polish: **A1**
 ## Code:
