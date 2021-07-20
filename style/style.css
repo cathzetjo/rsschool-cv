@@ -5,13 +5,15 @@
 body {
     margin: 0px;
     padding: 0px;
+    height: 100vh;
     background-image: url("../assets/images/background.png");
+    background-size: cover;
     color: #eeeeee;
     font-family: Righteous-Regular, serif;
     font-size: 24px;
 }
 
-ol li  {
+ol li {
     list-style-type: none;
 }
 
@@ -38,70 +40,14 @@ svg:hover {
 header {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    padding: 60px 0px 70px 0px;
+    padding: 60px 0px 100px 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center
 }
 
-main {
-    text-align: center;
-    color: #595959;
-}
-
-.about {
-    background-color: #ffffff;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    border-radius: 7px;
-}
-
-.about img {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
-.about .contacts {
-    border-top-right-radius: 5px;
-}
-
-.about .social{
-    border-bottom-right-radius: 5px;
-}
-
-.speech {
-    font-size: 20px;
-}
-
-.social {
-    background-color: #1eb47f;
-    margin-top: 10px;
-}
-
-.greetings {
-    font-size: 35px;
-    border-bottom: 2px solid #addacd;
-    margin: 0 30px 12px 0;
-}
-
-.greetings span{
-    color: #1eb47f;
-}
-
-.summary,
-.skills,
-.experience,
-.education,
-.code {
-    font-family: Archivo-Regular, serif;
-}
-
-
-footer {
-    background-color: #6e6e6e;
-}
-
-h1{
+h1 {
     margin: 0px;
     font-size: 45px;
     letter-spacing: 1px;
@@ -126,7 +72,7 @@ header nav {
     flex-grow: 1;
 }
 
-header section{
+header section {
     padding-left: 20px;
     padding-right: 10px;
 }
@@ -145,6 +91,51 @@ nav ol li a svg {
     top: 4px;
 }
 
+main {
+    text-align: center;
+    color: #595959;
+}
+
+.about {
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 7px;
+}
+
+.avatar{
+    margin: 0;
+    height: 415px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.about .contacts {
+    border-top-right-radius: 5px;
+}
+
+.speech {
+    font-size: 20px;
+}
+
+.greetings {
+    font-size: 35px;
+    border-bottom: 2px solid #addacd;
+    margin: 0 30px 12px 0;
+}
+
+.greetings span {
+    color: #1eb47f;
+}
+
+.about .social {
+    border-bottom-right-radius: 5px;
+}
+
+.social {
+    background-color: #1eb47f;
+    margin-top: 10px;
+}
+
 .about {
     display: flex;
     flex-wrap: wrap;
@@ -152,7 +143,7 @@ nav ol li a svg {
     justify-content: center;
 }
 
-.contacts{
+.contacts {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -162,12 +153,7 @@ nav ol li a svg {
 
 .contacts .mainInfo,
 .contacts .social {
-  padding-left: 40px;
-}
-
-.about img {
-    margin: 0;
-    height: 415px;
+    padding-left: 40px;
 }
 
 .social ol {
@@ -187,13 +173,141 @@ tr td:first-child {
     line-height: 40px;
 }
 
+tr td a {
+    color: #595959;
+}
+
+tr td a:hover {
+    color: #1eb47f;
+}
+.mobileOperator {
+    position: relative;
+    top: 5px;
+    left: 7px;
+    height: 28px;
+}
+
+.summary,
+.skills,
+.experienceLang,
+.education,
+.code {
+    font-family: Archivo-Regular, serif;
+    text-align: justify;
+    background-color: #ffffff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 7px;
+    padding: 30px 60px;
+}
+
+h3 {
+    color: #1eb47f;
+    padding: 50px 0px 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.skillsList {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.skillsList h4 {
+    margin: 25px 80px 15px 0px;
+    flex-grow: 1;
+    font-size: 22px;
+}
+
+.skillsList p {
+    background-color: #1eb47f;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 10px 20px;
+    color: #eeeeee;
+}
+
+.experienceLang {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+    box-shadow: none;
+    justify-content: center;
+}
+
+.lng,
+.experience {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 7px;
+    padding: 30px 60px 0px 60px;
+    font-weight: 600;
+}
+
+.experience {
+    margin-right: 135px;
+}
+
+.lng-eng,
+.lng-pl {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.experienceLang div p:first-child {
+    margin-right: 40px;
+}
+
+.experience img {
+    height: 250px;
+    margin-bottom: 22px;
+}
+
+.experience p span {
+    margin-left: 40px;
+}
+
+.lng img {
+    height: 115px;
+}
+
+.lng-eng {
+    margin-top: 65px;
+    margin-bottom: -20px;
+}
+
+
 .upBtn a,
- .upBtn svg {
-     color: #1eb47f;
- }
+.upBtn svg {
+    color: #1eb47f;
+    text-transform: uppercase;
+}
 
 .upBtn a svg {
     position: relative;
-    padding-left: 4px;
+    padding: 0px 8px;
     top: 5px;
+}
+
+footer {
+    background-color: #6e6e6e;
+}
+
+.code {
+    font-size: 20px;
+}
+
+.code p {
+    padding: 0px 20px;
+}
+
+.includedCode {
+    background-color: #313131;
+    color: #c5c5c5;
 }
