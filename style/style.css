@@ -5,8 +5,10 @@
 body {
     margin: 0px;
     padding: 0px;
-    height: 100vh;
-    background-image: url("../assets/images/background.png");
+    background: url("../assets/images/background.jpg") no-repeat center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     color: #eeeeee;
     font-family: Righteous-Regular, serif;
@@ -40,7 +42,7 @@ svg:hover {
 header {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    padding: 60px 0px 100px 0px;
+    padding: 60px 0px 70px 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
