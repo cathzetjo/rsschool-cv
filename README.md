@@ -1,1 +1,1 @@
-[https://cathzetjo.github.io/rsschool-cv/cv](https://cathzetjo.github.io/rsschool-cv/cv)
+[https://cathzetjo.github.io/rsschool-cv/](https://cathzetjo.github.io/rsschool-cv/)
