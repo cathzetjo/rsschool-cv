@@ -5,7 +5,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    background: url("../assets/images/background.jpg") no-repeat center ;
+    background: url("../assets/images/background.jpg") no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -104,9 +104,9 @@ main {
     border-radius: 7px;
 }
 
-.avatar{
+.avatar {
     margin: 0;
-    height: 415px;
+    height: 465px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
@@ -158,6 +158,10 @@ main {
     padding-left: 40px;
 }
 
+.contacts .mainInfo {
+    padding-bottom: 50px;
+}
+
 .social ol {
     display: flex;
     justify-content: space-around;
@@ -182,6 +186,7 @@ tr td a {
 tr td a:hover {
     color: #1eb47f;
 }
+
 .mobileOperator {
     position: relative;
     top: 5px;
@@ -209,14 +214,25 @@ h3 {
     text-transform: uppercase;
 }
 
+h3 svg {
+    position: relative;
+    padding-right: 10px;
+    top: 2px;
+}
+
+.skills {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .skillsList {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin: 30px;
 }
 
 .skillsList h4 {
-    margin: 25px 80px 15px 0px;
+    margin: 25px -10px 15px 0px;
     flex-grow: 1;
     font-size: 22px;
 }
@@ -224,9 +240,23 @@ h3 {
 .skillsList p {
     background-color: #1eb47f;
     border-radius: 5px;
-    padding: 10px 15px;
-    margin: 10px 20px;
+    padding: 12px 10px;
+    margin: 10px;
+    font-size: 20px;
     color: #eeeeee;
+}
+
+.skillsList .list {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skills hr {
+    height: 1px;
+    background-color: rgba(174, 172, 171, 0.45);
+    border: none;
 }
 
 .experienceLang {
@@ -235,6 +265,7 @@ h3 {
     background-color: transparent;
     box-shadow: none;
     justify-content: center;
+    padding: 0;
 }
 
 .lng,
@@ -247,12 +278,16 @@ h3 {
     background-color: #ffffff;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     border-radius: 7px;
-    padding: 30px 60px 0px 60px;
     font-weight: 600;
 }
 
 .experience {
-    margin-right: 135px;
+    margin-right: 70px;
+    padding: 30px;
+}
+
+.lng {
+    padding: 30px 40px;
 }
 
 .lng-eng,
@@ -276,7 +311,7 @@ h3 {
 }
 
 .lng img {
-    height: 115px;
+    height: 140px;
 }
 
 .lng-eng {
@@ -284,21 +319,40 @@ h3 {
     margin-bottom: -20px;
 }
 
-
-.upBtn a,
-.upBtn svg {
-    color: #1eb47f;
-    text-transform: uppercase;
+.education {
+    padding: 0px;
+    display: flex;
+    align-items: center;
 }
 
-.upBtn a svg {
+.education img {
+    padding: 30px;
+    height: 300px;
+}
+
+.educationList {
+    margin: 10px 30px;
+}
+
+.educationList p {
+    font-size: 22px;
+    margin: 0;
+}
+
+.educationList p:first-child {
+    padding-bottom: 70px;
+}
+
+
+.educationList p svg {
     position: relative;
-    padding: 0px 8px;
-    top: 5px;
+    padding-right: 10px;
+    top: 2px;
 }
 
-footer {
-    background-color: #6e6e6e;
+.educationList p span {
+    color: #1eb47f;
+    font-weight: 600;
 }
 
 .code {
@@ -312,4 +366,20 @@ footer {
 .includedCode {
     background-color: #313131;
     color: #c5c5c5;
+    overflow: auto;
+}
+
+.upBtn a,
+.upBtn svg {
+    color: #1eb47f;
+}
+
+.upBtn a svg {
+    position: relative;
+    padding: 0px 8px;
+    top: 5px;
+}
+
+footer {
+    background-color: #6e6e6e;
 }
