@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Katerina Zhadko CV</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -11,7 +9,8 @@
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
-<p style="visibility: hidden"><a name="top"></a></p>
+<p style="visibility: hidden"><a id="top"></a></p>
+<h3 class="upBtn"><a href="#top">Up<i data-feather="chevrons-up"></i></a></h3>
 <div class="wrapper">
     <header>
         <section>
@@ -29,7 +28,7 @@
         </nav>
     </header>
     <main>
-        <section class="about">
+        <div class="about">
             <img src="https://avatars.githubusercontent.com/u/44948376?v=4" alt="My photo" class="avatar">
 
             <div class="contacts">
@@ -60,73 +59,78 @@
                 </div>
                 <div class="social">
                     <ol>
-                        <li><a href="#"><i data-feather="github"></i></a></li>
-                        <li><a href="#"><i data-feather="linkedin"></i></a></li>
-                        <li><a href="#"><i data-feather="twitter"></i></a></li>
-                        <li><a href="#"><i data-feather="facebook"></i></a></li>
-                        <li><a href="#"><i data-feather="instagram"></i></a></li>
+                        <li><a href="https://github.com/cathzetjo" target="_blank"><i data-feather="github"></i></a>
+                        </li>
+                        <li><a href="https://linkedin.com/in/katerina-zhadko/" target="_blank"><i
+                                data-feather="linkedin"></i></a></li>
+                        <li><a href="https://twitter.com/javascript" target="_blank"><i data-feather="twitter"></i></a>
+                        </li>
+                        <li><a href="https://www.facebook.com/worlditplanet" target="_blank"><i
+                                data-feather="facebook"></i></a></li>
+                        <li><a href="https://instagram.com/javascript.js/" target="_blank"><i
+                                data-feather="instagram"></i></a></li>
                     </ol>
                 </div>
             </div>
-        </section>
-        <a name="summary"></a>
-         <h3><i data-feather="info"></i>Summary</h3>
-        <section class="summary">
+        </div>
+        <a id="summary"></a>
+        <h3><i data-feather="info"></i>Summary</h3>
+        <div class="summary">
             <p>We know that many would like to start a career in IT,
                 but they are stopped by a whole set of different factors:
                 you need to understand how capable and talented you are for this job, find the time to study,
                 take a good developer courses, then, somehow, without experience,
                 find your first job in this area.</p>
             <p> All this seems almost impossible, especially if you are not already 20
-                years old.
+                years old.</p>
             <p> But is it really so?</p>
-            </p></section>
-        <a name="skills"></a>
+            </div>
+        <a id="skills"></a>
         <h3><i data-feather="key"></i>Skills</h3>
-        <section class="skills">
+        <div class="skills">
             <div class="skillsList">
                 <h4>Languages and technologies</h4>
                 <div class="list">
-                <p>JavaScript </p>
-                <p>HTML5</p>
-                <p>CSS3</p>
-                <p>SQL</p>
-                <p>Node.js</p>
+                    <p>JavaScript </p>
+                    <p>HTML5</p>
+                    <p>CSS3</p>
+                    <p>SQL</p>
+                    <p>Node.js</p>
                 </div>
             </div>
             <hr>
             <div class="skillsList">
                 <h4>Frameworks and libraries</h4>
                 <div class="list">
-                <p>WPF</p>
-                <p>React</p>
-                <p>Material UI</p>
-                <p>Youtube API</p>
-                <p>Moment.js</p>
+                    <p>WPF</p>
+                    <p>React</p>
+                    <p>Material UI</p>
+                    <p>Youtube API</p>
+                    <p>Moment.js</p>
                 </div>
             </div>
             <hr>
             <div class="skillsList">
                 <h4>Tools</h4>
                 <div class="list">
-                <p>Photoshop</p>
-                <p>Figma</p>
-                <p>Jira</p>
-                <p>GIT</p>
-                <p>Webstorm</p>
-                <p>SQL DB</p>
+                    <p>Photoshop</p>
+                    <p>Figma</p>
+                    <p>Jira</p>
+                    <p>GIT</p>
+                    <p>Webstorm</p>
+                    <p>SQL DB</p>
                 </div>
             </div>
-        </section>
-        <a name="experience"></a>
+        </div>
+        <a id="experience"></a>
         <h3><i data-feather="briefcase"></i>Experience and foreign languages</h3>
-        <section class="experienceLang">
+        <div class="experienceLang">
             <div class="experience">
-                <img src="assets/images/experience_background.jpg">
+                <img src="assets/images/experience_background.jpg" alt="background">
                 <p>2020 - till now :<span>working as a front-end developer</span></p>
             </div>
             <div class="lng">
-                <img src="assets/images/languages_background.png">
+                <img src="assets/images/languages_background.png" alt="background">
                 <div class="lng-eng">
                     <p>English:</p>
                     <p>B2</p>
@@ -136,20 +140,21 @@
                     <p>A1</p>
                 </div>
             </div>
-        </section>
-
-        <a name="education"></a>
+        </div>
+        <a id="education"></a>
         <h3><i data-feather="book-open"></i>Education</h3>
-        <section class="education">
-                 <img src="assets/images/education_background.png">
+        <div class="education">
+            <img src="assets/images/education_background.png" alt="background">
             <div class="educationList">
-                <p> <i data-feather="check"></i>Belorussian State Economic University (<span>economy</span> and trade management faculty)</p>
-                <p> <i data-feather="check"></i>University of retraining on the basis of higher education (degree in <span>software engineering</span>) </p>
+                <p><i data-feather="check"></i>Belorussian State Economic University (<span>economy</span> and trade
+                    management faculty)</p>
+                <p><i data-feather="check"></i>University of retraining on the basis of higher education (degree in
+                    <span>software engineering</span>) </p>
             </div>
-        </section>
-        <a name="code"></a>
+        </div>
+        <a id="code"></a>
         <h3><i data-feather="code"></i>Code</h3>
-        <section class="code">
+        <div class="code">
             <p>This is a piece of code that displays the action when the Save button is clicked.
                 As you can see from the code, the button is not unique, so an array iteration is used to determine which
                 button is pressed.
@@ -178,12 +183,16 @@
     })
             </code></pre>
             </div>
-        </section>
-        <h3 class="upBtn"><a href="#top"><i data-feather="chevrons-up"></i>Up<i data-feather="chevrons-up"></i></a></h3>
+        </div>
     </main>
     <footer>
-        <p>info about school and course</p>
-        <p>2021&copy;</p>
+        <a href="https://rs.school/js/" target="_blank">
+            <img src="assets/images/rs_school_js.svg" alt="rsschool_logo"
+                 title="Click here for a free &quot;JavaScript/Front-end&quot; course"> </a>
+        <a href="https://github.com/cathzetjo" target="_blank" title="Visit my github"><i
+                data-feather="github"></i></a>
+        <p>2021 &copy;</p>
+
     </footer>
 </div>
 <script>

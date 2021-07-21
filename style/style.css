@@ -30,6 +30,32 @@ svg:hover {
     color: #0e553f;
 }
 
+p[style="visibility: hidden"] {
+    margin: 0;
+    padding: 0;
+}
+
+.upBtn {
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 45%;
+    text-align: right;
+}
+
+.upBtn a,
+.upBtn svg {
+    color: #1eb47f;
+    background-color: transparent;
+}
+
+.upBtn a svg {
+    position: relative;
+    padding: 0px 8px;
+    top: 5px;
+}
+
 .wrapper {
     width: 70%;
     margin: 0px auto;
@@ -42,7 +68,8 @@ svg:hover {
 header {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    padding: 60px 0px 70px 0px;
+    padding-top: 20px;
+    padding-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -369,17 +396,20 @@ h3 svg {
     overflow: auto;
 }
 
-.upBtn a,
-.upBtn svg {
-    color: #1eb47f;
-}
-
-.upBtn a svg {
-    position: relative;
-    padding: 0px 8px;
-    top: 5px;
-}
-
 footer {
+    margin-top: 100px;
+    display: flex;
     background-color: #6e6e6e;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+footer img {
+    height: 65px;
+}
+
+footer a svg {
+    height: 35px;
+    width: 35px;
 }
