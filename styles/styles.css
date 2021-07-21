@@ -5,14 +5,14 @@
 body {
     margin: 0px;
     padding: 0px;
+    font-family: Righteous-Regular, serif;
+    font-size: 24px;
+    color: #eeeeee;
     background: url("../assets/images/background.jpg") no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color: #eeeeee;
-    font-family: Righteous-Regular, serif;
-    font-size: 24px;
 }
 
 ol li {
@@ -21,8 +21,8 @@ ol li {
 
 a,
 a:active {
-    text-decoration: none;
     color: #eeeeee;
+    text-decoration: none;
 }
 
 a:hover,
@@ -36,11 +36,11 @@ p[style="visibility: hidden"] {
 }
 
 .upBtn {
-    margin: 0;
-    padding: 0;
     position: sticky;
     position: -webkit-sticky;
     top: 45%;
+    margin: 0;
+    padding: 0;
     text-align: right;
 }
 
@@ -51,29 +51,29 @@ p[style="visibility: hidden"] {
 }
 
 .upBtn a svg {
+    top: 5px;
     position: relative;
     padding: 0px 8px;
-    top: 5px;
 }
 
 .wrapper {
-    width: 70%;
-    margin: 0px auto;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    width: 70%;
     min-width: 520px;
+    margin: 0px auto;
+    text-align: center;
 }
 
 header {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
     padding-top: 20px;
     padding-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 h1 {
@@ -92,8 +92,8 @@ h2 {
 
 nav ol {
     display: flex;
-    justify-content: space-evenly;
     padding: 0;
+    justify-content: space-evenly;
 }
 
 header section,
@@ -116,8 +116,8 @@ nav ol li {
 
 nav ol li a svg {
     position: relative;
-    padding-right: 8px;
     top: 4px;
+    padding-right: 8px;
 }
 
 main {
@@ -132,8 +132,8 @@ main {
 }
 
 .avatar {
-    margin: 0;
     height: 465px;
+    margin: 0;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
@@ -147,9 +147,9 @@ main {
 }
 
 .greetings {
+    margin: 0 30px 12px 0;
     font-size: 35px;
     border-bottom: 2px solid #addacd;
-    margin: 0 30px 12px 0;
 }
 
 .greetings span {
@@ -161,8 +161,8 @@ main {
 }
 
 .social {
-    background-color: #1eb47f;
     margin-top: 10px;
+    background-color: #1eb47f;
 }
 
 .about {
@@ -191,9 +191,9 @@ main {
 
 .social ol {
     display: flex;
-    justify-content: space-around;
     margin-top: 16px;
     margin-bottom: 8px;
+    justify-content: space-around;
 }
 
 .social ol svg {
@@ -226,25 +226,29 @@ tr td a:hover {
 .experienceLang,
 .education,
 .code {
+    padding: 30px 60px;
     font-family: Archivo-Regular, serif;
     text-align: justify;
     background-color: #ffffff;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     border-radius: 7px;
-    padding: 30px 60px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 h3 {
-    color: #1eb47f;
     padding: 50px 0px 20px;
     text-align: center;
+    color: #1eb47f;
     text-transform: uppercase;
 }
 
 h3 svg {
     position: relative;
-    padding-right: 10px;
     top: 2px;
+    padding-right: 10px;
+}
+
+h3 svg:hover {
+    color: #1eb47f;
 }
 
 .skills {
@@ -265,17 +269,17 @@ h3 svg {
 }
 
 .skillsList p {
-    background-color: #1eb47f;
-    border-radius: 5px;
     padding: 12px 10px;
     margin: 10px;
     font-size: 20px;
     color: #eeeeee;
+    background-color: #1eb47f;
+    border-radius: 5px;
 }
 
 .skillsList .list {
-    flex-grow: 1;
     display: flex;
+    flex-grow: 1;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
@@ -288,24 +292,24 @@ h3 svg {
 
 .experienceLang {
     display: flex;
+    padding: 0;
     flex-wrap: wrap;
+    justify-content: center;
     background-color: transparent;
     box-shadow: none;
-    justify-content: center;
-    padding: 0;
 }
 
 .lng,
 .experience {
-    margin-top: 10px;
     display: flex;
+    margin-top: 10px;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #ffffff;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    border-radius: 7px;
     font-weight: 600;
+    background-color: #ffffff;
+    border-radius: 7px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .experience {
@@ -347,14 +351,14 @@ h3 svg {
 }
 
 .education {
-    padding: 0px;
     display: flex;
+    padding: 0px;
     align-items: center;
 }
 
 .education img {
-    padding: 30px;
     height: 300px;
+    padding: 30px;
 }
 
 .educationList {
@@ -362,8 +366,8 @@ h3 svg {
 }
 
 .educationList p {
-    font-size: 22px;
     margin: 0;
+    font-size: 22px;
 }
 
 .educationList p:first-child {
@@ -373,13 +377,13 @@ h3 svg {
 
 .educationList p svg {
     position: relative;
-    padding-right: 10px;
     top: 2px;
+    padding-right: 10px;
 }
 
 .educationList p span {
-    color: #1eb47f;
     font-weight: 600;
+    color: #1eb47f;
 }
 
 .code {
@@ -391,18 +395,18 @@ h3 svg {
 }
 
 .includedCode {
-    background-color: #313131;
-    color: #c5c5c5;
     overflow: auto;
+    color: #c5c5c5;
+    background-color: #313131;
 }
 
 footer {
-    margin-top: 100px;
     display: flex;
-    background-color: #6e6e6e;
+    margin-top: 100px;
     align-items: center;
     justify-content: space-around;
     font-size: 30px;
+    background-color: #6e6e6e;
 }
 
 footer img {
