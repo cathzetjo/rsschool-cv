@@ -6,7 +6,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: Righteous-Regular, serif;
-    font-size: 24px;
+    font-size: 22px;
     color: #eeeeee;
     background: url("../assets/images/background.jpg") no-repeat center;
     -webkit-background-size: cover;
@@ -23,6 +23,11 @@ a,
 a:active {
     color: #eeeeee;
     text-decoration: none;
+}
+
+figure {
+    padding: 0;
+    margin: 0;
 }
 
 a:hover,
@@ -72,6 +77,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    font-size: 24px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -126,14 +132,23 @@ main {
 }
 
 .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 24px;
+    text-align: left;
     background-color: #ffffff;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-.avatar {
+.about figure {
     height: 465px;
-    margin: 0;
+    font-size: 24px;
+}
+
+.about figure img {
+    height: 465px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
@@ -163,13 +178,6 @@ main {
 .social {
     margin-top: 10px;
     background-color: #1eb47f;
-}
-
-.about {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: left;
-    justify-content: center;
 }
 
 .contacts {
@@ -229,6 +237,7 @@ tr td a:hover {
     padding: 30px 60px;
     font-family: Archivo-Regular, serif;
     text-align: justify;
+    line-height: 32px;
     background-color: #ffffff;
     border-radius: 7px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -268,20 +277,22 @@ h3 svg:hover {
     font-size: 22px;
 }
 
-.skillsList p {
-    padding: 12px 10px;
+.skillsList ol {
     margin: 10px;
-    font-size: 20px;
-    color: #eeeeee;
-    background-color: #1eb47f;
-    border-radius: 5px;
-}
-
-.skillsList .list {
+    padding: 0px;
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.skillsList li {
+    padding: 8px 10px;
+    margin: 2px;
+    font-size: 20px;
+    color: #eeeeee;
+    background-color: #1eb47f;
+    border-radius: 5px;
 }
 
 .skills hr {
@@ -390,12 +401,14 @@ h3 svg:hover {
     font-size: 20px;
 }
 
-.code p {
+.code figcaption {
     padding: 0px 20px;
 }
 
 .includedCode {
     overflow: auto;
+    line-height: normal;
+    white-space: pre;
     color: #c5c5c5;
     background-color: #313131;
 }

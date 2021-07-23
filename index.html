@@ -29,8 +29,9 @@
     </header>
     <main>
         <div class="about">
-            <img src="https://avatars.githubusercontent.com/u/44948376?v=4" alt="My photo" class="avatar">
-
+            <figure>
+                <img src="https://avatars.githubusercontent.com/u/44948376?v=4" alt="My photo">
+            </figure>
             <div class="contacts">
                 <div class="mainInfo">
                     <p class="speech">Hello and welcome!</p>
@@ -43,7 +44,7 @@
                         <tr>
                             <td>Phone:</td>
                             <td><a href="tel:+375296000150">+375296000150<img src="assets/images/A1.png"
-                                                                              alt="Mobile operator A1"
+                                                                              alt="Mobile operator A1 logo"
                                                                               class="mobileOperator"></a></td>
                         </tr>
                         <tr>
@@ -90,47 +91,47 @@
         <div class="skills">
             <div class="skillsList">
                 <h4>Languages and technologies</h4>
-                <div class="list">
-                    <p>JavaScript </p>
-                    <p>HTML5</p>
-                    <p>CSS3</p>
-                    <p>SQL</p>
-                    <p>Node.js</p>
-                </div>
+                <ol class="list">
+                    <li>JavaScript</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>SQL</li>
+                    <li>Node.js</li>
+                </ol>
             </div>
             <hr>
             <div class="skillsList">
                 <h4>Frameworks and libraries</h4>
-                <div class="list">
-                    <p>WPF</p>
-                    <p>React</p>
-                    <p>Material UI</p>
-                    <p>Youtube API</p>
-                    <p>Moment.js</p>
-                </div>
+                <ol class="list">
+                    <li>WPF</li>
+                    <li>React</li>
+                    <li>Material UI</li>
+                    <li>Youtube API</li>
+                    <li>Moment.js</li>
+                </ol>
             </div>
             <hr>
             <div class="skillsList">
                 <h4>Tools</h4>
-                <div class="list">
-                    <p>Photoshop</p>
-                    <p>Figma</p>
-                    <p>Jira</p>
-                    <p>GIT</p>
-                    <p>Webstorm</p>
-                    <p>SQL DB</p>
-                </div>
+                <ol>
+                    <li>Photoshop</li>
+                    <li>Figma</li>
+                    <li>Jira</li>
+                    <li>GIT</li>
+                    <li>Webstorm</li>
+                    <li>SQL DB</li>
+                </ol>
             </div>
         </div>
         <a id="experience"></a>
         <h3><i data-feather="briefcase"></i>Experience and foreign languages</h3>
         <div class="experienceLang">
             <div class="experience">
-                <img src="assets/images/experience_background.jpg" alt="background">
+                <figure><img src="assets/images/experience_background.jpg" alt="Background"></figure>
                 <p>2020 - till now :<span>working as a front-end developer</span></p>
             </div>
             <div class="lng">
-                <img src="assets/images/languages_background.png" alt="background">
+                <figure><img src="assets/images/languages_background.png" alt="Background"></figure>
                 <div class="lng-eng">
                     <p>English:</p>
                     <p>B2</p>
@@ -144,9 +145,9 @@
         <a id="education"></a>
         <h3><i data-feather="book-open"></i>Education</h3>
         <div class="education">
-            <img src="assets/images/education_background.png" alt="background">
+            <figure><img src="assets/images/education_background.png" alt="Background"></figure>
             <div class="educationList">
-                <p><i data-feather="check"></i>Belorussian State Economic University (<span>economy</span> and trade
+                <p><i data-feather="check"></i>Belarussian State Economic University (<span>economy</span> and trade
                     management faculty)</p>
                 <p><i data-feather="check"></i>University of retraining on the basis of higher education (degree in
                     <span>software engineering</span>) </p>
@@ -154,8 +155,8 @@
         </div>
         <a id="code"></a>
         <h3><i data-feather="code"></i>Code</h3>
-        <div class="code">
-            <p>This is a piece of code that displays the action when the Save button is clicked.
+        <figure class="code">
+            <figcaption>This is a piece of code that displays the action when the Save button is clicked.
                 As you can see from the code, the button is not unique, so an array iteration is used to determine which
                 button is pressed.
                 The algorithm described in the code monitors the click of the Save button and performs a number of
@@ -163,36 +164,33 @@
                 it sends the data entered by the user to the server, hides the save button, activates the edit button,
                 makes the input field non-editable, launches a spinner that will run until the data on the page is
                 updated.
-            </p>
-            <div class="includedCode">
-            <pre>    <code>
-    Array.from(document.getElementsByClassName(&quot;saveBtn&quot;)).forEach(function (e) {
-        e.addEventListener('click', function () {
-            document.querySelector('.spinner').style.display = 'inline';
-            const saveArrayElement = this.closest('.correctingVolume');
-            const editInput = saveArrayElement.querySelector('.editInput');
-            const editBtn = saveArrayElement.querySelector('.editBtn');
-            const saveBtn = saveArrayElement.querySelector('.saveBtn');
-            editBtn.style.display = 'inline';
-            saveBtn.style.display = 'none';
-            editInput.setAttribute('disabled', 'true');
-            const idOfNewValue = saveArrayElement.querySelector('.idInput').value;
-            const newValue = editInput.value;
-            postNewData(idOfNewValue, newValue);
-        })
-    })
-            </code></pre>
-            </div>
-        </div>
+            </figcaption>
+            <p class="includedCode"><code>
+                Array.from(document.getElementsByClassName(&quot;saveBtn&quot;)).forEach(function (e) {
+                e.addEventListener('click', function () {
+                document.querySelector('.spinner').style.display = 'inline';
+                const saveArrayElement = this.closest('.correctingVolume');
+                const editInput = saveArrayElement.querySelector('.editInput');
+                const editBtn = saveArrayElement.querySelector('.editBtn');
+                const saveBtn = saveArrayElement.querySelector('.saveBtn');
+                editBtn.style.display = 'inline';
+                saveBtn.style.display = 'none';
+                editInput.setAttribute('disabled', 'true');
+                const idOfNewValue = saveArrayElement.querySelector('.idInput').value;
+                const newValue = editInput.value;
+                postNewData(idOfNewValue, newValue);
+                })
+                })
+            </code></p>
+        </figure>
     </main>
     <footer>
         <a href="https://rs.school/js/" target="_blank">
-            <img src="assets/images/rs_school_js.svg" alt="rsschool_logo"
+            <img src="assets/images/rs_school_js.svg" alt="Rolling Scopes School logo"
                  title="Click here for a free &quot;JavaScript/Front-end&quot; course"> </a>
         <a href="https://github.com/cathzetjo" target="_blank" title="Visit my github"><i
                 data-feather="github"></i></a>
         <p>2021 &copy;</p>
-
     </footer>
 </div>
 <script>
