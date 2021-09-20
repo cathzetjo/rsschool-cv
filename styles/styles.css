@@ -242,7 +242,8 @@ tr td a:hover {
 .skills,
 .experienceLang,
 .education,
-.code {
+.code,
+.projects {
     padding: 30px 60px;
     font-family: Archivo-Regular, serif;
     text-align: justify;
@@ -414,13 +415,43 @@ h3 svg:hover {
     padding: 0px 20px;
 }
 
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projects figure {
+    margin: 10px;
+    border: 1px solid var(--coorDarkGreen);
+    border-radius: 5px;
+    justify-content: space-between;
+    display: flex;
+    flex-flow: column;
+}
+
+.projects figure img {
+    max-width: 280px;
+    border-radius: 5px;
+}
+
+.projects figure figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+    border-radius: 5px;
+}
+
 footer {
     display: flex;
     margin-top: 100px;
     align-items: center;
     justify-content: space-around;
     font-size: 30px;
-    background-color: #6e6e6e;
+    background-color: var(--colorDarkGray);
 }
 
 footer img {
