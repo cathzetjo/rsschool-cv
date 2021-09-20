@@ -7,6 +7,9 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
 <p style="visibility: hidden"><a id="top"></a></p>
@@ -14,7 +17,7 @@
 <div class="wrapper">
     <header>
         <div class="hamburger-menu">
-            <input id="menu__toggle" type="checkbox" />
+            <input id="menu__toggle" type="checkbox"/>
             <label class="menu__btn" for="menu__toggle">
                 <span></span>
             </label>
@@ -169,32 +172,29 @@
         <a id="code"></a>
         <h3><i data-feather="code"></i>Code</h3>
         <figure class="code">
-            <figcaption>This is a piece of code that displays the action when the Save button is clicked.
-                As you can see from the code, the button is not unique, so an array iteration is used to determine which
-                button is pressed.
-                The algorithm described in the code monitors the click of the Save button and performs a number of
-                actions:
-                it sends the data entered by the user to the server, hides the save button, activates the edit button,
-                makes the input field non-editable, launches a spinner that will run until the data on the page is
-                updated.
+            <figcaption><b>Nickname Generator.</b>
+                Function takes a string name as an argument and returns the first 3 or 4 letters as a nickname.
+                If the 3rd letter is a consonant, return the first 3 letters.
+                If the 3rd letter is a vowel, return the first 4 letters.
+                If the string is less than 4 characters, return an error.
             </figcaption>
-            <p class="includedCode"><code>
-                Array.from(document.getElementsByClassName(&quot;saveBtn&quot;)).forEach(function (e) {
-                e.addEventListener('click', function () {
-                document.querySelector('.spinner').style.display = 'inline';
-                const saveArrayElement = this.closest('.correctingVolume');
-                const editInput = saveArrayElement.querySelector('.editInput');
-                const editBtn = saveArrayElement.querySelector('.editBtn');
-                const saveBtn = saveArrayElement.querySelector('.saveBtn');
-                editBtn.style.display = 'inline';
-                saveBtn.style.display = 'none';
-                editInput.setAttribute('disabled', 'true');
-                const idOfNewValue = saveArrayElement.querySelector('.idInput').value;
-                const newValue = editInput.value;
-                postNewData(idOfNewValue, newValue);
-                })
-                })
-            </code></p>
+
+            <pre><code class="language-javascript">
+        function nicknameGenerator(name){
+           if (name.length&lt;=3) {
+               return "Error: Name too short";
+           }
+           const symbols = name.split('');
+           if ('aeiou'.includes(symbols[2])) {
+               return name.slice(0, 4);
+           } else {
+               return name.slice(0, 3);
+           }
+        }
+        console.log(nicknameGenerator("Robert")); //=> "Rob"
+        console.log(nicknameGenerator("Douglas"); //=> "Doug"
+        console.log(nicknameGenerator("Bu"); //=> "Error: Name too short"
+            </code></pre>
         </figure>
     </main>
     <footer>
