@@ -270,6 +270,20 @@ h3 svg:hover {
     color: var(--coorGreen);
 }
 
+.summary {
+    text-align: center;
+}
+
+.summary a {
+    color: var(--coorGreen);
+}
+
+iframe {
+    width: 660px;
+    height: 415px;
+    border: none;
+}
+
 .skills {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -422,27 +436,46 @@ h3 svg:hover {
     align-items: center;
 }
 
+.projects a {
+    color: var(--colorDarkGray);
+}
+
 .projects figure {
     margin: 10px;
-    border: 1px solid var(--coorDarkGreen);
     border-radius: 5px;
     justify-content: space-between;
     display: flex;
     flex-flow: column;
+    width: 280px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.projects figure:hover {
+    transition-duration: .5s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .projects figure img {
     max-width: 280px;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 0;
+    padding: 0;
 }
 
-.projects figure figcaption {
+.projects figure figcaption p:first-child {
     background-color: #222;
     color: #fff;
-    font: italic smaller sans-serif;
-    padding: 3px;
+    padding: 10px;
+    margin: 0;
     text-align: center;
-    border-radius: 5px;
+}
+
+.projects figure p {
+    font-size: 18px;
+    line-height: normal;
+    text-align: center;
+    padding: 0 5px;
 }
 
 footer {
