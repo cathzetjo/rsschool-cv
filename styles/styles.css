@@ -2,6 +2,10 @@
 @import "scrollbar.css";
 @import "burger.css";
 @import "speech.css";
+@import "media_1750.css";
+@import "media_1546.css";
+@import "media_1425.css";
+@import "media_1200.css";
 
 :root {
     --colorWhite: #ffffff;

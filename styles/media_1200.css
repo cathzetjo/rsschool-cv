@@ -1,0 +1,60 @@
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 1.2em !important;
+    }
+
+    header section h1 {
+        font-size: 1.5em;
+    }
+
+    header section h2 {
+        font-size: 1em;
+    }
+
+    .mainInfo {
+        margin: 0 auto;
+        font-size: 0.9em;
+    }
+
+    .about figure img {
+        height: 208px !important;
+    }
+
+    .speech,
+    .greetings {
+        display: none;
+    }
+
+    .contacts .mainInfo {
+        padding-bottom: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    .mainInfo tr td:first-child {
+        padding-right: 0px;
+        line-height: 5px;
+    }
+
+    .social ul svg {
+        width: 23px !important;
+        height: 23px !important;
+    }
+
+    iframe {
+        width: 550px !important;
+        height: 305px !important;
+    }
+
+    .skillsList {
+        margin: 20px !important;
+    }
+
+    .skillsList li {
+        padding: 8px !important;
+        font-size: 18px !important;
+    }
+
+    h4 {
+        font-size: 1.1em !important;
+    }
+}
