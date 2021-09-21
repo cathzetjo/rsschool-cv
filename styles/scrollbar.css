@@ -4,7 +4,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #10B57D;
+    background-color: var(--coorDarkGreen);
     border-radius: 9em;
     box-shadow: inset 1px 1px 10px #f3faf7;
 }

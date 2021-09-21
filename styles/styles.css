@@ -1,13 +1,26 @@
 @import "fonts.css";
 @import "scrollbar.css";
+@import "burger.css";
 @import "speech.css";
+@import "media_1750.css";
+@import "media_1546.css";
+@import "media_1425.css";
+@import "media_1200.css";
+
+:root {
+    --colorWhite: #ffffff;
+    --colorLightGray: #eeeeee;
+    --colorDarkGray: #595959;
+    --coorGreen: #1eb47f;
+    --coorDarkGreen: #0e553f;
+}
 
 body {
     margin: 0px;
     padding: 0px;
     font-family: Righteous-Regular, serif;
     font-size: 22px;
-    color: #eeeeee;
+    color: var(--colorWhite);
     background: url("../assets/images/background.jpg") no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -15,13 +28,13 @@ body {
     background-size: cover;
 }
 
-ol li {
+ul li {
     list-style-type: none;
 }
 
 a,
 a:active {
-    color: #eeeeee;
+    color: var(--colorWhite);
     text-decoration: none;
 }
 
@@ -32,7 +45,7 @@ figure {
 
 a:hover,
 svg:hover {
-    color: #0e553f;
+    color: var(--coorDarkGreen);
 }
 
 p[style="visibility: hidden"] {
@@ -51,7 +64,7 @@ p[style="visibility: hidden"] {
 
 .upBtn a,
 .upBtn svg {
-    color: #1eb47f;
+    color: var(--coorGreen);
     background-color: transparent;
 }
 
@@ -96,7 +109,7 @@ h2 {
     font-weight: 400;
 }
 
-nav ol {
+nav ul {
     display: flex;
     padding: 0;
     justify-content: space-evenly;
@@ -116,11 +129,11 @@ header nav {
     padding-right: 20px;
 }
 
-nav ol li {
+nav ul li {
     padding-right: 15px;
 }
 
-nav ol li a svg {
+nav ul li a svg {
     position: relative;
     top: 4px;
     padding-right: 8px;
@@ -128,7 +141,7 @@ nav ol li a svg {
 
 main {
     text-align: center;
-    color: #595959;
+    color: var(--colorDarkGray);
 }
 
 .about {
@@ -137,7 +150,7 @@ main {
     justify-content: center;
     font-size: 24px;
     text-align: left;
-    background-color: #ffffff;
+    background-color: var(--colorWhite);
     border-radius: 7px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
@@ -168,7 +181,7 @@ main {
 }
 
 .greetings span {
-    color: #1eb47f;
+    color: var(--coorGreen);
 }
 
 .about .social {
@@ -177,7 +190,7 @@ main {
 
 .social {
     margin-top: 10px;
-    background-color: #1eb47f;
+    background-color: var(--coorGreen);
 }
 
 .contacts {
@@ -197,14 +210,14 @@ main {
     padding-bottom: 50px;
 }
 
-.social ol {
+.social ul {
     display: flex;
     margin-top: 16px;
     margin-bottom: 8px;
     justify-content: space-around;
 }
 
-.social ol svg {
+.social ul svg {
     width: 30px;
     height: 30px;
 }
@@ -219,7 +232,7 @@ tr td a {
 }
 
 tr td a:hover {
-    color: #1eb47f;
+    color: var(--coorGreen);
 }
 
 .mobileOperator {
@@ -233,12 +246,13 @@ tr td a:hover {
 .skills,
 .experienceLang,
 .education,
-.code {
+.code,
+.projects {
     padding: 30px 60px;
     font-family: Archivo-Regular, serif;
     text-align: justify;
     line-height: 32px;
-    background-color: #ffffff;
+    background-color: var(--colorWhite);
     border-radius: 7px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
@@ -246,7 +260,7 @@ tr td a:hover {
 h3 {
     padding: 50px 0px 20px;
     text-align: center;
-    color: #1eb47f;
+    color: var(--coorGreen);
     text-transform: uppercase;
 }
 
@@ -257,7 +271,21 @@ h3 svg {
 }
 
 h3 svg:hover {
-    color: #1eb47f;
+    color: var(--coorGreen);
+}
+
+.summary {
+    text-align: center;
+}
+
+.summary a {
+    color: var(--coorGreen);
+}
+
+iframe {
+    width: 660px;
+    height: 415px;
+    border: none;
 }
 
 .skills {
@@ -277,7 +305,7 @@ h3 svg:hover {
     font-size: 22px;
 }
 
-.skillsList ol {
+.skillsList ul {
     margin: 10px;
     padding: 0px;
     display: flex;
@@ -290,8 +318,8 @@ h3 svg:hover {
     padding: 8px 10px;
     margin: 2px;
     font-size: 20px;
-    color: #eeeeee;
-    background-color: #1eb47f;
+    color: var(--colorWhite);
+    background-color: var(--coorGreen);
     border-radius: 5px;
 }
 
@@ -318,7 +346,7 @@ h3 svg:hover {
     flex-wrap: wrap;
     align-items: center;
     font-weight: 600;
-    background-color: #ffffff;
+    background-color: var(--colorWhite);
     border-radius: 7px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
@@ -394,7 +422,7 @@ h3 svg:hover {
 
 .educationList p span {
     font-weight: 600;
-    color: #1eb47f;
+    color: var(--coorGreen);
 }
 
 .code {
@@ -405,12 +433,53 @@ h3 svg:hover {
     padding: 0px 20px;
 }
 
-.includedCode {
-    overflow: auto;
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projects a {
+    color: var(--colorDarkGray);
+}
+
+.projects figure {
+    margin: 10px;
+    border-radius: 5px;
+    justify-content: space-between;
+    display: flex;
+    flex-flow: column;
+    width: 280px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.projects figure:hover {
+    transition-duration: .5s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.projects figure img {
+    max-width: 280px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+.projects figure figcaption p:first-child {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.projects figure p {
+    font-size: 18px;
     line-height: normal;
-    white-space: pre;
-    color: #c5c5c5;
-    background-color: #313131;
+    text-align: center;
+    padding: 0 5px;
 }
 
 footer {
@@ -419,7 +488,7 @@ footer {
     align-items: center;
     justify-content: space-around;
     font-size: 30px;
-    background-color: #6e6e6e;
+    background-color: var(--colorDarkGray);
 }
 
 footer img {
