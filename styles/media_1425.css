@@ -1,0 +1,40 @@
+@media screen and (max-width: 1425px) {
+
+    .about .contacts {
+       padding-top: 10px;
+
+        justify-content: revert;
+    }
+
+    .about figure {
+        height: 0px !important;
+    }
+
+    .about figure img {
+        height: 308px !important;
+    }
+    .speech,
+    .greetings {
+        display: none;
+    }
+
+    .contacts .mainInfo {
+         padding-bottom: 0px;
+    }
+
+    .social {
+        background-color: var(--colorWhite) !important;
+    }
+    .social ul li a {
+        color: var(--coorGreen) !important;
+    }
+
+    .social {
+        padding-left: 0px !important;
+    }
+
+    .skillsList h4 {
+        text-align-last: center;
+    }
+
+}
